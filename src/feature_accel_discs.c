@@ -1,7 +1,7 @@
 #include "pebble.h"
 
 #define MATH_PI 3.141592653589793238462
-#define NUM_DISCS 20
+#define NUM_DISCS 5
 #define DISC_DENSITY 0.25
 #define ACCEL_RATIO 0.05
 #define ACCEL_STEP_MS 50
