@@ -48,8 +48,8 @@ static void disc_init(Disc *disc) {
 
 static void disc_apply_force(Disc *disc, Vec2d force) {
     //Add the harmonic occilator potential force
-    force.x += - SPRING_CONST * ( disc.x - window_frame.size.w/2);
-    force.y += - SPRING_CONST * ( disc.y - window_frame.size.h/2);
+    force.x += - SPRING_CONST * ( disc->pos.x - window_frame.size.w/2);
+    force.y += - SPRING_CONST * ( disc->pos.y - window_frame.size.h/2);
 
   disc->vel.x += force.x / disc->mass;
   disc->vel.y += force.y / disc->mass;
