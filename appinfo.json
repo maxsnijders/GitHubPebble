@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "max.snijders@gmail.com",
+    "longName": "GitHub Test",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "GitHub Test",
+    "uuid": "26fd768f-7a5e-4f21-94cf-6e4052a9315e",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
