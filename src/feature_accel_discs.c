@@ -5,6 +5,7 @@
 #define DISC_DENSITY 0.25
 #define ACCEL_RATIO 0.05
 #define ACCEL_STEP_MS 50
+#define SPRING_CONST 0.1
 
 typedef struct Vec2d {
   double x;
@@ -46,6 +47,10 @@ static void disc_init(Disc *disc) {
 }
 
 static void disc_apply_force(Disc *disc, Vec2d force) {
+    //Add the harmonic occilator potential force
+    force.x += - SPRING_CONST * ( disc.x - window_frame.size.w/2);
+    force.y += - SPRING_CONST * ( disc.y - window_frame.size.h/2);
+
   disc->vel.x += force.x / disc->mass;
   disc->vel.y += force.y / disc->mass;
 }
